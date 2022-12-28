@@ -1,0 +1,58 @@
+div {
+    color: white;
+}
+
+select {
+    background: #D6EEEE ;
+}
+
+input {
+    background: #D6EEEE;
+}
+
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #111;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+    margin-left: 30%;
+    margin-right: 3.5%;
+    padding: 1px 16px;
+    height: 100%;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+th,
+td {
+    padding: 8px;
+    border-bottom: 1px solid #DDD;
+}
+
+tr:hover {
+    background-color: #D6EEEE;
+}
+
+p {
+    margin-top: 44%;
+}
